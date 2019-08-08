@@ -41,9 +41,15 @@
 	<tr>
 		<td align="right">
 			<a href="/board/boardList.do">List</a>
-			<input type = "button" value = "Modify" />
+			<input type = "button" id = "modify" value = "Modify" />
 		</td>
 	</tr>
-</table>	
+</table>
+
+<Script type = "text/javascript">
+	$j("#modify").click(function(){
+		location.href = "/board/boardWrite.do";
+	})
+</Script>	
 </body>
 </html>
