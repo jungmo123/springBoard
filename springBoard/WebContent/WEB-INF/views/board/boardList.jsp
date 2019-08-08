@@ -53,6 +53,7 @@
 	<tr>
 		<td align="right">
 			<a href ="/board/boardWrite.do">±Û¾²±â</a>
+			<p>Main</p>
 		</td>
 	</tr>
 </table>	
