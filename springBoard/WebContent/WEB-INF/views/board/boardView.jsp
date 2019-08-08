@@ -48,7 +48,10 @@
 
 <Script type = "text/javascript">
 	$j("#modify").click(function(){
-		location.href = "/board/boardWrite.do";
+		var form = $j("<form action = '../../boardWrite.do' method = 'post'> <input type = 'text' name = 'boardNum' value = ${boardNum} /> <input type = 'text' name = 'boardType' value = ${boardType} /> </form>");
+		$j("body").append(form);
+		form.submit();
+			
 	})
 </Script>	
 </body>

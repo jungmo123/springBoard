@@ -69,9 +69,15 @@ public class BoardController {
 	}
 	
 	@RequestMapping(value = "/board/boardWrite.do", method = RequestMethod.GET)
-	public String boardWrite(Locale locale, Model model) throws Exception{
+	public String boardWrite(Locale locale, Model model,BoardVo boardVo) throws Exception{
 		
-		
+		return "board/boardWrite";
+	}
+	
+	@RequestMapping(value = "/board/boardWrite.do", method = RequestMethod.POST)
+	public String boardModify(Locale locale, Model model,BoardVo boardVo) throws Exception{
+		BoardVo vo  = boardService.selectBoard(boardVo.getBoardType(), boardVo.getBoardNum());
+		model.addAttribute("board", vo);
 		return "board/boardWrite";
 	}
 	
