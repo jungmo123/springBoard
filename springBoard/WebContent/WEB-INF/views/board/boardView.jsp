@@ -30,7 +30,7 @@
 				</tr>
 				<tr>
 					<td align="center">
-					Writer
+					Writer 
 					</td>
 					<td>
 					</td>
