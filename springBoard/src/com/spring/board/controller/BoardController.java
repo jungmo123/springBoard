@@ -88,7 +88,7 @@ public class BoardController {
 		String callbackMsg = commonUtil.getJsonCallBackString(" ",result);
 		
 		System.out.println("callbackMsg::"+callbackMsg);
-		
+		 
 		return callbackMsg;
 	}
 	
