@@ -64,7 +64,7 @@
         )
         VALUES
         ('1'
-        ,(SELECT TO_NUMBER(MAX(BOARD_NUM)+1)
+        ,(SELECT TO_NUMBER(NVL2(MAX(BOARD_NUM)+1,MAX(BOARD_NUM)+1,1))
 	    FROM BOARD
 	    WHERE BOARD_TYPE = '1')
         ,#{boardTitle}
