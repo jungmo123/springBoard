@@ -41,6 +41,7 @@
 	<tr>
 		<td align="right">
 			<a href="/board/boardList.do">List</a>
+			<input type = "button" value = "Modify" />
 		</td>
 	</tr>
 </table>	
